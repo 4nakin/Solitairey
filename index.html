@@ -1,15 +1,9 @@
 <!doctype html>
 
 <html manifest="cache.manifest">
-  <!--
-  Hi! There's no useful source code on this page :(
-  BUT!! There is at index-dev.html and Solitairey's Github page https://github.com/pharrington/Solitairey :)
-  happy hacking
-  -->
-
 
 <head>
-	<title>Solitairey - Beautiful HTML5 Solitaire</title>
+	<title>Solitaire - Beautiful HTML5 Solitaire</title>
 	<meta name="description" content="A modern solitaire collection for the web. Built with HTML5 and Javascript.">
 	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,37 +14,34 @@
 	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css">
 	<![endif]>
 
-<script type="text/javascript">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-9447574-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-47859133-1', 'roguelikegames.com');
+  ga('send', 'pageview');
 
 </script>
 
 </head>
 <body>
 
-<div id=social>
-	<iframe id="fb" src="http://www.facebook.com/plugins/like.php?href=www.solitairey.com&amp;layout=button_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-	<form id=donate action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-	<input type="hidden" name="cmd" value="_donations">
-	<input type="hidden" name="business" value="jordanlool@gmail.com">
-	<input type="hidden" name="lc" value="US">
-	<input type="hidden" name="item_name" value="Solitairey Card Games donations">
-	<input type="hidden" name="no_note" value="0">
-	<input type="hidden" name="currency_code" value="USD">
-	<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
-	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
-</div>
+<!--<div id=social>-->
+<!--	<iframe id="fb" src="http://www.facebook.com/plugins/like.php?href=www.solitairey.com&amp;layout=button_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>-->
+<!--	<form id=donate action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">-->
+<!--	<input type="hidden" name="cmd" value="_donations">-->
+<!--	<input type="hidden" name="business" value="jordanlool@gmail.com">-->
+<!--	<input type="hidden" name="lc" value="US">-->
+<!--	<input type="hidden" name="item_name" value="Solitairey Card Games donations">-->
+<!--	<input type="hidden" name="no_note" value="0">-->
+<!--	<input type="hidden" name="currency_code" value="USD">-->
+<!--	<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">-->
+<!--	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
+<!--	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
+<!--	</form>-->
+<!--</div>-->
 
 	<ul id="menu" class="top-menu">
 		<li class="begin">
@@ -74,9 +65,9 @@
 		<li>
 			<a id="rules">Rules</a>
 		</li>
-                <li class="end">
-			<a id="about">About</a>
-		</li>
+  <!--              <li class="end">-->
+		<!--	<a id="about">About</a>-->
+		<!--</li>-->
 	</ul>
 	<div id="rules-popup" class="hidden popup"><div class="popup-content">
           <button class="popup-button close-chooser">OK</button>
@@ -225,7 +216,7 @@ Double Klondike plays exactly like Klondike, except for using two decks and havi
 					<div class="layout"></div>
 					<h3>Eight Off Solitaire Rules</h3>
                                         <blockquote>
-Eightoff is an older ancestor in the Freecell lineage of solitaire, and provides some interesting twists if you’re used to racking up hundreds of wins in Freecell. You have eight reserve slots available, but one card is immediately dealt to the first four. Tableaus are built down in rank and suit. The rest of the rules are the same as Freecell. Overall it’s about as winnable a solitaire as its more popular grandchild, and the same general strategy applies: focus on emptying piles with cards you can move to the foundation as soon as possible.
+Eightoff is an older ancestor in the Freecell lineage of solitaire, and provides some interesting twists if youï¿½re used to racking up hundreds of wins in Freecell. You have eight reserve slots available, but one card is immediately dealt to the first four. Tableaus are built down in rank and suit. The rest of the rules are the same as Freecell. Overall itï¿½s about as winnable a solitaire as its more popular grandchild, and the same general strategy applies: focus on emptying piles with cards you can move to the foundation as soon as possible.
 					</blockquote>
 				</div>
 			</li>
@@ -265,7 +256,7 @@ Forty Thieves is probably the most popular solitaire game played with two decks,
 					<div class="layout"></div>
 					<h3>Freecell Solitaire Rules</h3>
                                         <blockquote>
-Freecell is a fairly modern solitaire game that was popularized by its inclusion on many computer systems. Unlike most solitaires, almost no luck is involved and with strategy more than 99.9% of its games can be won.  Build the foundations up from Aces to Kings in suit. Build the tableaus down by rank and alternating color. Free tableau spaces can be filled by any card, and the free reserve cells can be filled by any one card at a time. Because of this, the length of the piles you can move is limited only by the amount of enough free cells and/or tableau openings. Strategize by building long runs and opening up tableau spaces as early as possible and you’ll be well on your way to winning almost every game of Freecell solitaire you play!
+Freecell is a fairly modern solitaire game that was popularized by its inclusion on many computer systems. Unlike most solitaires, almost no luck is involved and with strategy more than 99.9% of its games can be won.  Build the foundations up from Aces to Kings in suit. Build the tableaus down by rank and alternating color. Free tableau spaces can be filled by any card, and the free reserve cells can be filled by any one card at a time. Because of this, the length of the piles you can move is limited only by the amount of enough free cells and/or tableau openings. Strategize by building long runs and opening up tableau spaces as early as possible and youï¿½ll be well on your way to winning almost every game of Freecell solitaire you play!
 					</blockquote>
 				</div>
 			</li>
@@ -285,7 +276,7 @@ Golf is a fairly simple solitaire that allows for a bit of skill. The goal is to
 					<div class="layout"></div>
 					<h3>Grandfather's Clock Solitaire Rules</h3>
                                         <blockquote>
-Grandfather’s Clock is a pictorial solitaire game that involves little strategy, yet is still easy to win. This solitaire’s goal is to build the foundations in suit, up to the pile’s hour position. For example, to complete the top pile starting with the nine of clubs play a 10, Jack, and Queen. On the next play (10 of hearts), play the Jack, Queen, King, and Ace. In this solitaire build the tableaus downwards regardless of suit, but you can only move one card at a time. Even with this restriction Grandfather’s Clock is a solitaire that can often be one with a little be of foresight.
+Grandfatherï¿½s Clock is a pictorial solitaire game that involves little strategy, yet is still easy to win. This solitaireï¿½s goal is to build the foundations in suit, up to the pileï¿½s hour position. For example, to complete the top pile starting with the nine of clubs play a 10, Jack, and Queen. On the next play (10 of hearts), play the Jack, Queen, King, and Ace. In this solitaire build the tableaus downwards regardless of suit, but you can only move one card at a time. Even with this restriction Grandfatherï¿½s Clock is a solitaire that can often be one with a little be of foresight.
 					</blockquote>
 				</div>
 			</li>
@@ -296,7 +287,7 @@ Grandfather’s Clock is a pictorial solitaire game that involves little strategy,
 					<div class="layout"></div>
 					<h3>Klondike Solitaire Rules (Patience, Fascination)</h3>
                                         <blockquote>
-Klondike is the most popular solitaire game, so much so that the word “solitaire” immediately brings to mind this specific game. The game is won when all the foundations are built in up rank and suit from Ace to King. The tableaus are built downwards by rank and alternatioing color, and faceup piles of any length can be moved. However, only Kings can fill empty columns. Click the deck to transfer three cards to the wastepile, the top of which is playable. When the deck is exhausted, click it again to replenish it from the cards in the waste. A common strategy to make this solitaire easier is to -not- play cards from the waste unless it gives you an opportunity to turn up a face down card, or if it lets you move a card to the foundation. Another strategy is to work on turning up the larger face down piles first, as this increases the number of cards in play, and in turn the number of moves you can make. Even with this strategies not every game of Klondike solitaire is winnable, but you’ll have a much better success rate. Good Luck!
+Klondike is the most popular solitaire game, so much so that the word ï¿½solitaireï¿½ immediately brings to mind this specific game. The game is won when all the foundations are built in up rank and suit from Ace to King. The tableaus are built downwards by rank and alternatioing color, and faceup piles of any length can be moved. However, only Kings can fill empty columns. Click the deck to transfer three cards to the wastepile, the top of which is playable. When the deck is exhausted, click it again to replenish it from the cards in the waste. A common strategy to make this solitaire easier is to -not- play cards from the waste unless it gives you an opportunity to turn up a face down card, or if it lets you move a card to the foundation. Another strategy is to work on turning up the larger face down piles first, as this increases the number of cards in play, and in turn the number of moves you can make. Even with this strategies not every game of Klondike solitaire is winnable, but youï¿½ll have a much better success rate. Good Luck!
                                         </blockquote>
 				</div>
 			</li>
@@ -306,7 +297,7 @@ Klondike is the most popular solitaire game, so much so that the word “solitaire
 					<div class="layout"></div>
 					<h3>Vegas Klondike Solitaire Rules</h3>
 					<blockquote>
-Klondike Vegas is the gamblers variety of Klondike solitaire. In this game you turn over only one card from the waste at a time, but you’re not allowed to restock the deck. Since you only have once chance to play every card, you can see why casinos adopted this solitaire.
+Klondike Vegas is the gamblers variety of Klondike solitaire. In this game you turn over only one card from the waste at a time, but youï¿½re not allowed to restock the deck. Since you only have once chance to play every card, you can see why casinos adopted this solitaire.
 					</blockquote>
 				</div>
 			</li>
@@ -316,7 +307,7 @@ Klondike Vegas is the gamblers variety of Klondike solitaire. In this game you t
 					<div class="layout"></div>
 					<h3>La Belle Lucie Solitaire Rules</h3>
 					<blockquote>
-La Belle Lucie is a solitaire game that’s organized into fans, instead of stacks. The top card of each fan can be played either on a foundation or another fan. Foundations are build up in rank and suit; the fans are built down in rank and suit. If you empty a fan, you cannot place another card in its place. Because of this restriction, you can click the click up to two times to shuffle the cards into new fans of three. Even with the reshuffle and thorough, La Belle Lucie is still a solitaire game that requires a great amount of luck to win. This is because if a fan contains a King that is hiding a lower ranked card of the same suit, the hidden card can never be played. If you like La Belle Lucie but prefer a somewhat more strategic and winnable solitaire game, try the aptly named "The Fan."
+La Belle Lucie is a solitaire game thatï¿½s organized into fans, instead of stacks. The top card of each fan can be played either on a foundation or another fan. Foundations are build up in rank and suit; the fans are built down in rank and suit. If you empty a fan, you cannot place another card in its place. Because of this restriction, you can click the click up to two times to shuffle the cards into new fans of three. Even with the reshuffle and thorough, La Belle Lucie is still a solitaire game that requires a great amount of luck to win. This is because if a fan contains a King that is hiding a lower ranked card of the same suit, the hidden card can never be played. If you like La Belle Lucie but prefer a somewhat more strategic and winnable solitaire game, try the aptly named "The Fan."
 					</blockquote>
 				</div>
 			</li>
@@ -366,7 +357,7 @@ Scorpion solitaire is an incredibly difficult and luck-reliant run-building soli
 					<div class="layout"></div>
 					<h3>Simple Simon Solitaire Rules</h3>
                                         <blockquote>
-Simple Simon, despite its name, is a actually very skillful solitaire. It’s somewhat similar to Spider solitaire; the goal is to make four in-suit runs from Ace to King, which will be automatically discarded. Any in-suit run or single card at the bottom of a pile may be moved, and these piles may be moved onto any free card one rank higher than it, regardless of suit. Free spaces can be filled by any card. A good strategy of winning this solitaire is to free as many slots in the beginning of the game as you can. Also while playing, try to avoid moving Kings to free slots if possible, as this will just block off the slot until the whole running beginning with that King is completed.
+Simple Simon, despite its name, is a actually very skillful solitaire. Itï¿½s somewhat similar to Spider solitaire; the goal is to make four in-suit runs from Ace to King, which will be automatically discarded. Any in-suit run or single card at the bottom of a pile may be moved, and these piles may be moved onto any free card one rank higher than it, regardless of suit. Free spaces can be filled by any card. A good strategy of winning this solitaire is to free as many slots in the beginning of the game as you can. Also while playing, try to avoid moving Kings to free slots if possible, as this will just block off the slot until the whole running beginning with that King is completed.
                                         </blockquote>
 				</div>
 			</li>
@@ -376,7 +367,7 @@ Simple Simon, despite its name, is a actually very skillful solitaire. It’s some
 					<div class="layout"></div>
 					<h3>Spider Solitaire Rules</h3>
                                         <blockquote>
-Spider has been called the “King of Solitaires,” and is rumored to have been a favoriate past-time with Franklin D. Roosevelt. This two pack solitaire tremendously rewards skill, and while not every hand is winnable, experience lets when take advantage of difficult deals much more than in any other solitaire game. To win, make and discard eight in-suit runs from Ace to King. The tableau piles are built downwards, regardless of suit. Any top card or in-suit run on a pile may be played the tableau or a free space. If you see no more available plays, click the deck to deal one card to each tableau pile; note that this can only be done if no piles are empty. Work to uncover as many cards as possible while opening up free spaces. Free spaces are extremely important in Spider solitaire as they let you easily organize out of suit piles and move longer runs of disorganized cards, so avoid playing Kings on them unless absolutely necessary.
+Spider has been called the ï¿½King of Solitaires,ï¿½ and is rumored to have been a favoriate past-time with Franklin D. Roosevelt. This two pack solitaire tremendously rewards skill, and while not every hand is winnable, experience lets when take advantage of difficult deals much more than in any other solitaire game. To win, make and discard eight in-suit runs from Ace to King. The tableau piles are built downwards, regardless of suit. Any top card or in-suit run on a pile may be played the tableau or a free space. If you see no more available plays, click the deck to deal one card to each tableau pile; note that this can only be done if no piles are empty. Work to uncover as many cards as possible while opening up free spaces. Free spaces are extremely important in Spider solitaire as they let you easily organize out of suit piles and move longer runs of disorganized cards, so avoid playing Kings on them unless absolutely necessary.
                                         </blockquote>
 				</div>
 			</li>
@@ -426,7 +417,7 @@ Tri Towers is a variant of Golf solitaire. To play, discard any free card that i
 					<div class="layout"></div>
 					<h3>Will O' The Wisp Solitaire Rules</h3>
                                         <blockquote>
-Will O’ The Wisp, like Spiderette solitaire, is a one deck version of Spider. Its a bit easier to win this solitaire though as less cards start off buried.
+Will Oï¿½ The Wisp, like Spiderette solitaire, is a one deck version of Spider. Its a bit easier to win this solitaire though as less cards start off buried.
                                         </blockquote>
 				</div>
 			</li>
@@ -485,14 +476,14 @@ Yukon is a very skillful solitaire focused on moving piles instead of single car
           <button class="popup-button close-chooser">OK</button>
 	</div></div>
 	<img src=loading.gif class="loading hidden">
-	<div class="chromestore hidden">
+	<!--<div class="chromestore hidden">-->
 	
-		<a class=hide>[Hide]</a>
-                <a href=https://chrome.google.com/webstore/detail/dofbnmhnoodmmlhflbcihicmbnhhinhp>
-                  <img src=ChromeWebStore_Badge_v2_206x58.png>
-                </a>
+	<!--	<a class=hide>[Hide]</a>-->
+ <!--               <a href=https://chrome.google.com/webstore/detail/dofbnmhnoodmmlhflbcihicmbnhhinhp>-->
+ <!--                 <img src=ChromeWebStore_Badge_v2_206x58.png>-->
+ <!--               </a>-->
 	
-	</div>
+	<!--</div>-->
 	<div id=confirmation class="hidden">
 		<div id=confirmation-popup class="popup">
 			<div class="popup-content">

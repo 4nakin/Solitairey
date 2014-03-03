@@ -7,7 +7,6 @@
 	<meta name="description" content="A modern solitaire collection for the web. Built with HTML5 and Javascript.">
 	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-        <meta property="fb:admins" content="100000659492810">
         <link rel="stylesheet" href="yui-tabview.css">
 	<link rel="stylesheet" href="cards.css">
 	<![if lt IE 9]>
@@ -28,20 +27,20 @@
 </head>
 <body>
 
-<!--<div id=social>-->
-<!--	<iframe id="fb" src="http://www.facebook.com/plugins/like.php?href=www.solitairey.com&amp;layout=button_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>-->
-<!--	<form id=donate action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">-->
-<!--	<input type="hidden" name="cmd" value="_donations">-->
-<!--	<input type="hidden" name="business" value="jordanlool@gmail.com">-->
-<!--	<input type="hidden" name="lc" value="US">-->
-<!--	<input type="hidden" name="item_name" value="Solitairey Card Games donations">-->
-<!--	<input type="hidden" name="no_note" value="0">-->
-<!--	<input type="hidden" name="currency_code" value="USD">-->
-<!--	<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">-->
-<!--	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
-<!--	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
-<!--	</form>-->
-<!--</div>-->
+<div id=social>
+	<iframe id="fb" src="http://www.facebook.com/plugins/like.php?href=www.solitairey.com&amp;layout=button_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+	<form id=donate action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+	<input type="hidden" name="cmd" value="_donations">
+	<input type="hidden" name="business" value="jordanlool@gmail.com">
+	<input type="hidden" name="lc" value="US">
+	<input type="hidden" name="item_name" value="Solitairey Card Games donations">
+	<input type="hidden" name="no_note" value="0">
+	<input type="hidden" name="currency_code" value="USD">
+	<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+</div>
 
 	<ul id="menu" class="top-menu">
 		<li class="begin">
@@ -72,7 +71,37 @@
 	<div id="rules-popup" class="hidden popup"><div class="popup-content">
           <button class="popup-button close-chooser">OK</button>
 	</div></div>
-	
+	<div id="about-popup" class="hidden popup"><div class="popup-content">
+          <p>
+          Solitairey is a collection of Solitaire games created by me, <a class="external" href=http://www.facebook.com/lordpharrington>Paul Harrington</a>.<br />
+          I found the book <a class="external" href="http://www.amazon.com/gp/product/1314837672/ref=as_li_qf_sp_asin_tl?ie=UTF8&tag=solitairey-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=1314837672">150 Ways to Play Solitaire</a> in an old bookstore one day and was fascinated by its huge variety of solitaires, having only known about Freecell and Klondike from playing on the computer.
+          Solitairey was a way for me to try out the games I saw that looked fun, while providing an easy way for other people to play.
+          </p>
+          
+          <div class="features">
+            Current features include:
+            <ul>
+              <li>Over 30 complete games</li>
+              <li>Hi res full screen graphics</li>
+              <li>Unlimited undo</li>
+              <li>Automatic progress saving; start where you left off even after closing your browser</li>
+              <li>Statistics tracking</li>
+              <li>Customizable card and background graphics</li>
+              <li>Togglable autoplay, automatic card flipping and animations</li>
+              <li>Freecell solver</li>
+            </ul>
+          </div>
+
+          <hr />
+          <p>
+          If you like these games, click the Facebook like button and tell your friends about it!
+          You can also find this on the <a class="external" href=https://chrome.google.com/webstore/detail/dofbnmhnoodmmlhflbcihicmbnhhinhp>Chrome Web Store</a>; install the app, rate it, and leave your comments.
+          If you don't have Chrome, still send feedback by emailing me at <a class="external" href="mailto:paul.c.harrington@gmail.com">paul.c.harrington@gmail.com</a> or <a class="external" href=http://www.facebook.com/lordpharrington>messaging me on Facebook</a>.
+          Tell me any games or features you want added, report any bugs you find, or just let me know I'm doing a wonderful job :)
+          Have a great day.
+          </p>
+          <button class="popup-button close-chooser">OK</button>
+	</div></div>
 	<div id="game-chooser">
 		<div id="game-chooser-contents">
 		<ul id="descriptions">
@@ -446,14 +475,14 @@ Yukon is a very skillful solitaire focused on moving piles instead of single car
           <button class="popup-button close-chooser">OK</button>
 	</div></div>
 	<img src=loading.gif class="loading hidden">
-	<!--<div class="chromestore hidden">-->
+	<div class="chromestore hidden">
 	
-	<!--	<a class=hide>[Hide]</a>-->
- <!--               <a href=https://chrome.google.com/webstore/detail/dofbnmhnoodmmlhflbcihicmbnhhinhp>-->
- <!--                 <img src=ChromeWebStore_Badge_v2_206x58.png>-->
- <!--               </a>-->
+		<a class=hide>[Hide]</a>
+                <a href=https://chrome.google.com/webstore/detail/dofbnmhnoodmmlhflbcihicmbnhhinhp>
+                  <img src=ChromeWebStore_Badge_v2_206x58.png>
+                </a>
 	
-	<!--</div>-->
+	</div>
 	<div id=confirmation class="hidden">
 		<div id=confirmation-popup class="popup">
 			<div class="popup-content">
